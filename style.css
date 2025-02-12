@@ -506,11 +506,12 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Prevents image distortion */
+    /* object-fit: cover;  */
 }
 
 .desktop-hero-img {
     display: block; /* Show the web version by default */
+    object-fit: cover; /* Ensure the image covers the entire container */
 }
 
 .mobile-hero-img {
@@ -524,5 +525,6 @@ footer {
 
     .mobile-hero-img {
         display: block; /* Show mobile version on smaller screens */
+        object-fit: contain; /* Ensure the image fits within the container */
     }
 }
